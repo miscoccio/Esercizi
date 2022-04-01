@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+// Definisco un vettore di N elementi inseriti dall'utente e poi ne faccio la somma, media e prodotto.
+
+int main() {
+	int n;
+	cout << "Inserisci la dimensione dell'array: ";
+	cin >> n; //Qui l'utente decide la dimensione dell'array.
+	float v[n];
+	for (int i = 0; i < n - 1; i++) { //Ciclo for per l'inserimento degli n elementi dell'array.
+		cin >> v[i];
+	}
+	float somma, media, prodotto=1; //Ciclo for per la somma, prodotto.
+	for (int i = 0; i < n - 1; i++);{
+		somma = somma + v[i];
+		prodotto = prodotto * v[i];
+	}
+	media = somma / n; //Media calcolata utilizzando la somma ottenuta a fine ciclo for.
+	cout << "La somma, media e prodotto sono: " << somma, media, prodotto; //Cout a caso
+	return 0;
+}
